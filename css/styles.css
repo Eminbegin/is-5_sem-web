@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    background: #9b2d30;
+    background: #782828;
     color: #ffffff;
 }
 
@@ -65,16 +65,21 @@ content.blur-background {
 }
 
 .nav-button {
+    display: flex;
     font-family: monospace;
     width: 100%;
     background: none;
     color: orange;
     border: none;
     font-size: 25px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+
 .nav-button:hover {
-    color: red;
+    background-color: orange;
+    color: black;
 }
 
 .logo__wrapper {
