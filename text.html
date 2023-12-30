@@ -5,38 +5,98 @@
 	<title>Govno</title>
 	<link rel="icon" href="images/as.jpg"/>
 	<link href="css/styles.css" rel="stylesheet"/>
-	<script src="js/js.js" defer></script>
-	<script src="js/ukral_u_zarini.js" defer></script>
+	<link href="css/table.css" rel="stylesheet"/>
+	<script src="js/global.js" defer></script>
+	<script src="js/jokes.js" defer></script>
 	<script src="js/ukral_u_sashi.js" defer></script>
 </head>
 
 <body>
 <header class="header">
 	<div class="nav">
-		<div class="govno__wrapper">
+		<div class="nav__wrapper">
 			<a id="nav-index" class="nav-button" href="index.html">
-				<img class="govno__image" src="images/anekHub.jpg"/>
+				<img class="nav__logo-image" src="images/anekHub.jpg" alt=""/>
 			</a>
 		</div>
-		<nav class="navbar">
+		<nav class="nav__menu">
 			<a id="nav-text" class="nav-button" href="text.html">Анекдоты</a>
 			<a id="nav-image" class="nav-button" href="images.html">Картинки</a>
-			<a id="nav-audio" class="nav-button" href="audio.html">Аудиоприколы</a>
+			<a id="nav-audio" class="nav-button" href="audio.html"
+			>Аудиоприколы</a
+			>
 		</nav>
-		<a class="header__logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-			<img src="images/as.jpg"/>
+		<a class="header__logo">
+			<img src="images/as.jpg" alt=""/>
 		</a>
 	</div>
 </header>
-<main></main>
+<main class="main">
+	<form class="jokes-form">
+		<label>
+			<input type="text" class="jokes-form__input-title" placeholder="Заголовок"/>
+		</label>
+		<label>
+			<textarea class="jokes-form__input-text" placeholder="Содержание"></textarea>
+		</label>
+		<button type="submit" class="jokes-form__submit-button default-button">
+			Добавить свой анекдотик
+		</button>
+	</form>
+	<table class="jokes">
+		<thead class="jokes__header">
+		<tr class="jokes__row">
+			<th class="jokes__title">#</th>
+			<th class="jokes__title">Заголовок</th>
+			<th class="jokes__title">Содержание</th>
+		</tr>
+		</thead>
+		<tbody class="jokes__content">
+		<tr class="jokes__row">
+			<td class="jokes__data">
+				<div class="jokes__data-cell"> 1</div>
+			</td>
+			<td class="jokes__data-title">
+				<div class="jokes__data-cell"> Про улитку</div>
+			</td>
+			<td class="jokes__data">
+				<div class="jokes__data-cell">
+					Официант: — Хозяин, клиент возмущается, что в его тарелке
+					оказалась улитка! Хозяин ресторана: — Включи ее в счет!
+				</div>
+			</td>
+		</tr>
+		<tr class="jokes__row">
+			<td class="jokes__data">
+				<div class="jokes__data-cell"> 2</div>
+			</td>
+			<td class="jokes__data-title">
+				<div class="jokes__data-cell"> Про улитку</div>
+			</td>
+			<td class="jokes__data">
+				<div class="jokes__data-cell">
+					- Заходит в бар улитка, и говорит: "можно виски с колой? " -
+					Бармен: "мы не обслуживаем улиток, извини" и вышвырнул её за
+					дверь; - Через неделю снова заходит улитка в бар, и говорит: - "
+					Зачем ты это сделал?"
+				</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</main>
 
 <footer class="footer">
 	<div class="footer-wrapper">
 		<div class="footer__contacts">
 			<h1 class="footer__title">INFO:</h1>
 			<ul class="footer__links">
-				<li class="footer__link">telegram</li>
-				<li class="footer__link">github</li>
+				<li class="footer__link">
+					<a>tg: <a class="footer__link-name" href="https://t.me/EMINBEGIN">EMINBEGIN</a></a>
+				</li>
+				<li class="footer__link">
+					<a>github: <a class="footer__link-name" href="https://github.com/Eminbegin">Eminbegin</a></a>
+				</li>
 			</ul>
 		</div>
 		<div class="footer__load-time">

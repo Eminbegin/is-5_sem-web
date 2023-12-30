@@ -1,9 +1,3 @@
-const clearButton = document.getElementById('clearButton');
-clearButton.addEventListener('click', function () {
-    localStorage.clear(); // Очистка localStorage
-    alert('Local Storage очищен!');
-});
-
 (function () {
     'use strict';
 

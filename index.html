@@ -6,120 +6,52 @@
 	<link rel="icon" href="images/as.jpg">
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/popup.css" rel="stylesheet">
-	<script src="js/js.js" defer></script>
+	<script src="js/global.js" defer></script>
 	<script src="js/ukral_u_sashi.js" defer></script>
+	<script src="js/popup.js" defer></script>
 </head>
 <body>
 <header class="header">
-	<script src="js/popup.js"></script>
 	<div class="nav">
-		<div class="govno__wrapper">
+		<div class="nav__wrapper">
 			<a id="nav-index" class="nav-button" href="index.html">
-				<img class="govno__image" src="images/anekHub.jpg" alt="">
+				<img class="nav__logo-image" src="images/anekHub.jpg" alt="">
 			</a>
 		</div>
-		<nav class="navbar">
+		<nav class="nav__menu">
 			<a id="nav-text" class="nav-button" href="text.html">Анекдоты</a>
 			<a id="nav-image" class="nav-button" href="images.html">Картинки</a>
 			<a id="nav-audio" class="nav-button" href="audio.html">Аудиоприколы</a>
 		</nav>
-		<a id="clearButton" class="header__logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-			<img src="images/as.jpg"/>
+		<a class="nav__clear-button header__logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+			<img src="images/as.jpg" alt="a"/>
 		</a>
 	</div>
 </header>
 
 
-<main id="content">
-	<aside>
-		блок с курсами валют
-	</aside>
-	<section>
-		<pre>
-			говно<sub>говно <sub>говно <sup>говно</sup></sub></sub>
-			<strong>
-				говно
-			</strong>
-			<b>
-				говно
-			</b>
-			<i>
-				говно
-			</i>
-			<em>
-				говно
-			</em>
-			<code>
-				говно
-			</code>
+<main>
+	<div class="main-wrapper">
+		<aside>
+			Этот текст покрасится при уменьшении экрана и увеличится в 2 раза
+		</aside>
+		<div>
+			<a class="main__test-link" href="https://gosuslugi.ru/">
+				Эта ссылка реально не работает, пока не закрыть бургер
+			</a>
+		</div>
 
-		</pre>
-		<a href="https://www.gosuslugi.ru/">
-			говно
-		</a>
+		<div>
+			<a class="main__test-link" href="https://gosuslugi.ru/">
+				Эта ссылка реально не работает, пока не закрыть бургер
+			</a>
+		</div>
+		<div class="main__spoiler">
+			<img src="images/spoiler.png" alt="aaa">
+		</div>
 
-		<p>
-			LTHMVJ
-
-
-			Дерьмо
-		</p>
-	</section>
-	<article>
-		Анекдоты
-		<ol start="17" type=A>>
-			<li>внезапный дэб</li>
-			<li>я умер в канализации, захлёбываясь собственным говном и переродился в очко в туалете московской
-				ночлежки
-			</li>
-			<li>
-			<pre>
-				- мой брат всё сожрёт, как псина
-				- какой породы?
-				- нерусская овчурка
-			</pre>
-			</li>
-			<li>а - это аббревиатура к слову "Аббревиатура"</li>
-			<li>- О, Великий Мастер, скажите "Я не Великий Мастер, долбаёб"
-				- Я не Великий Мастер, долбаёб - ответил Великий Мастер
-			</li>
-		</ol>
-	</article>
-	<code>
-		if (a == b) {
-		console.log('Hello!');
-		}
-
-	</code>
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="ascii"><pre>
+		<br>
+		<div class="ascii"><pre>
 		###&&&&&&####&&&&&&###&&###########&&&&&&&&&&######BG5J?777777!!!!!77?JYPGGBBBGGGGGGBB##BGGPPPPGBBBBGGGB####BBB###########BBGPYJ??JY5PPPPGGPPPPGGB##############
 		#############&&&#############&&&&&&&&&&&&&&&&####BBBGGPY?777!!!!77777?YPGGPP5555PGGBBBBBBGGGGBB###BBBBB####################BGPYJ???JYPGGGGGPPPGGB##########&&&&#
 		BB#############&&&######BBBBBB##&&&&&&&@@&&&&#BGGPPPPP5Y?777!!7!!777?Y5PP55YY5PPPGGP5YJJJJ????JYYY5PGB##BBB###############BBGP5YJJ?JY5GGGGGGGBB#############&&#B
@@ -170,6 +102,7 @@
 		GBBBBBBBBBB#####BB##BBBBBBBB###&@@&&#BBBBBBBBBBBGGGGGGGGBBGGGGPP5555YYYYYJJ????Y555J?????7777!!7!!!^^~^::.......:::::..:^:..:::::::::::...::::::.::...:......::.
 		GBBBBBBBB##########BBBBBBBBB###&@@@@@&&#BBBBBBBBBBGGGBBBBBBBBBBGGGPPP5555YJJJY555YYJ????????????77!~~^^^^::::::::^^:::::::.:...............:::::..............::
 	</pre>
+		</div>
 	</div>
 </main>
 
@@ -179,8 +112,12 @@
 		<div class="footer__contacts">
 			<h1 class="footer__title">INFO:</h1>
 			<ul class="footer__links">
-				<li class="footer__link">telegram</li>
-				<li class="footer__link">github</li>
+				<li class="footer__link">
+					<a>tg: <a class="footer__link-name" href="https://t.me/EMINBEGIN">EMINBEGIN</a></a>
+				</li>
+				<li class="footer__link">
+					<a>github: <a class="footer__link-name" href="https://github.com/Eminbegin">Eminbegin</a></a>
+				</li>
 			</ul>
 		</div>
 		<div class="footer__load-time">
@@ -189,9 +126,8 @@
 	</div>
 </footer>
 <div id="popup">
-	<button id="close-btn">&times;</button>
+	<button id="close-btn">&times</button>
 	<img src="images/burger.html.svg.ppm.lgbt.png" alt="Popup Image">
 </div>
-<script src="js/popup.js"></script>
 </body>
 </html>
